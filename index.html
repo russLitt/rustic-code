@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<title>Rustic Code</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="site.css">
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large w3-hover-dark-grey">HOME</a></li>
+    <li><a href="http://79.170.43.15/testtopsecret.com/blog" class="w3-padding-large w3-hover-dark-grey">BLOG</a></li>
+    <li><a href="#" class="w3-padding-large w3-hover-dark-grey">MORE</a></li>
+    <!-- <li class="w3-hide-small w3-right">
+      <a href="#" class="w3-padding-large w3-hover-red"><i class="fa fa-search"></i></a>
+    </li>  -->
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-xlarge w3-mainFont w3-black w3-xxlarge w3-wide w3-animate-opacity w3-hover-grey">Rustic Code</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center w3-xxlarge w3-mainFont">ABOUT ME</h3>
+  <p class="w3-center"><em>I Have A Passion for Web-Based Technology</em></p>
+  <p>I am the number one fan of my baby gravy girl. I also feed on information and appreciate when it is presented in a logical and attractive way. It was 
+      inevitable I became a web developer. More spefically, I like to think of myself as a full-stack web developler with a focus on visual presentaion
+      as well as practical use. I have an education in Computer Science with a concentration in programming and have recently decided to direct my efforts
+      to creating modern, beautiful web applications on a freelance basis.  While my portfolio isn't too large at the moment, I can promise there will be much
+      more of my work to see in the coming months.</p>
+  <div class="w3-row">
+    <div class="w3-col m5 w3-center w3-section">
+      <h4><b>Russell Anderson</b></h4><br>
+      <img src="img/me.jpg" class="w3-circle" style="max-width:200px" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-section"> <!-- w3-hide-small -->
+      <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxxlarge w3-mainFont w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-xxlarge w3-mainFont">MY WORK</h3>
+  <p class="w3-center"><em>Here's a sample of some of my latest projects<br> Check back soon for more!</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m6">
+      <a href="http://passport865.com/" target="_blank"><h3>Passport 865</h3></a>
+      <img src="img/pass865.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <p>My major contribution to this site is the browse page............................</p>
+    </div>
+
+
+    <div class="w3-col m6">
+      <h3>entertainment865</h3>
+      <img src="img/ent865.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+      <p>A very ritcher site i made in class...........................................</p>
+    </div> 
+  </div> 
+
+ <!--  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="img_p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="img_p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div> -->
+</div>  
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">Close</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxxlarge w3-mainFont w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact_form">
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center w3-xxlarge w3-mainFont">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love to hear your thoughts</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-border w3-hover-border-black"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Maryville, US<br>
+        <!-- <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: +00 151515<br> -->
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: russell@rusticcode.com<br>
+      </div>
+      <p>Get in touch with me here:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name" name="first" required>
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <button class="w3-btn w3-section w3-right w3-dark-grey w3-hover-black" id="submit_button">SEND</button>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black">
+  <a href="https://www.linkedin.com/in/russell-anderson-3a9b8b121" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;&nbsp;
+  <a href="#"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp; 
+  <a href="https://github.com/russLitt?tab=overview&from=2016-08-01&to=2016-08-31&utf8=%E2%9C%93" target="_blank"><i class="fa fa-github"></i></a>
+  <p>Rustic Code &copy; <script>document.write(new Date().getFullYear())</script></p>
+   <!-- Special thanks to w3schools.com for providing this great template
+   <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p> -->
+</footer>
+ <script src="http://maps.googleapis.com/maps/api/js"></script>
+ <script src="scripts.js"></script>
+</body>
+</html>
+
